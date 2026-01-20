@@ -8,9 +8,9 @@ const Navbar = () => {
     return (
         <nav>
             <ul className='hidden md:flex md:justify-end md:items-center md:gap-6 md:my-5 md:text-lg '>
-                <li className='font-extra md:text-lg  hover:scale-110 transition-all hover:text-amber-600'><NavLink to="/">Characters</NavLink></li>
-                <li className='font-extra md:text-lg hover:scale-110 transition-all hover:text-amber-600'><NavLink to="/locations">Locations</NavLink></li>
-                <li className='font-extra md:text-lg hover:scale-110 transition-all hover:text-amber-600'><NavLink to="/episodes">Episodes</NavLink></li>
+                <li className='font-extra md:text-lg  hover:scale-110 transition-all hover:text-amber-600'><NavLink className={({ isActive }) => isActive ? 'font-extra md:text-lg text-amber-600 underline decoration-amber-600 decoration-2 underline-offset-10' : 'font-extra md:text-lg text-black hover:text-amber-600'} to="/">Characters</NavLink></li>
+                <li className='font-extra md:text-lg hover:scale-110 transition-all hover:text-amber-600'><NavLink className={({ isActive }) => isActive ? 'font-extra md:text-lg text-amber-600 underline decoration-amber-600 decoration-2 underline-offset-10' : 'font-extra md:text-lg text-black hover:text-amber-600'} to="/locations">Locations</NavLink></li>
+                <li className='hover:scale-110 transition-all'><NavLink className={({ isActive }) => isActive ? 'font-extra md:text-lg text-amber-600 underline decoration-amber-600 decoration-2 underline-offset-10' : 'font-extra md:text-lg text-black hover:text-amber-600'} to="/episodes">Episodes</NavLink></li>
             </ul>
             <i onClick={() => setIsMenuOpen(!isMenuOpen)} className={`${isMenuOpen ? "hidden" : "block"}`}>
                 <svg className='md:hidden block cursor-pointer hover:scale-110 transition-all hover:text-amber-600' width="24" height="24"
@@ -26,11 +26,11 @@ const Navbar = () => {
                 </svg>
             </i>
 
-            <ul 
-            className={
-                `md:hidden absolute z-100 top-15 left-0 w-full h-50% flex flex-col bg-white items-center gap-12 pt-1 pb-12 text-lg font-extra transform transition-transform ${isMenuOpen ? "opacity-100" : "opacity-0"}`} style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }} 
-                // className='absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-out transform group-hover:translate-y-0 translate-y-2'
-                >
+            <ul
+                className={
+                    `md:hidden absolute z-100 top-15 left-0 w-full h-50% flex flex-col bg-white items-center gap-12 pt-1 pb-12 text-lg font-extra transform transition-transform ${isMenuOpen ? "opacity-100" : "opacity-0"}`} style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}
+            // className='absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-out transform group-hover:translate-y-0 translate-y-2'
+            >
                 <li className='font-extra md:text-lg  hover:scale-110 transition-all hover:text-amber-600'><NavLink to="/">Characters</NavLink></li>
                 <li className='font-extra md:text-lg hover:scale-110 transition-all hover:text-amber-600'><NavLink to="/locations">Locations</NavLink></li>
                 <li className='font-extra md:text-lg hover:scale-110 transition-all hover:text-amber-600'><NavLink to="/episodes">Episodes</NavLink></li>

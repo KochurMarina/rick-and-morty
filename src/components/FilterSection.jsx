@@ -5,7 +5,7 @@ const FilterSection = ({ setPageNumber, setSearch }) => {
 
   return (
     <section className='mb-12 md:mb-16'>
-      <form action="" className='md:flex items-center justify-center'>
+      <form action="" className='flex items-center justify-center'>
         <SearchBar setPageNumber={setPageNumber} setSearch={setSearch} placeholderText="Filter by name..." />
       </form>
 
