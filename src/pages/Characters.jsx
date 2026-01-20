@@ -24,7 +24,7 @@ const Characters = () => {
   return (
     <div>
       <svg
-        className="m-auto my-4 px-5 stroke-black stroke-2 drop-shadow-[0_10px_10px] drop-shadow-green-500"
+        className="m-auto my-4 px-5 stroke-black stroke-2 drop-shadow-[0_10px_10px] drop-shadow-green-500 "
         width="100%"
         height="212"
         viewBox="0 0 723 212"
