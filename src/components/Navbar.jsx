@@ -28,8 +28,7 @@ const Navbar = () => {
 
             <ul
                 className={
-                    `md:hidden absolute z-100 top-15 left-0 w-full h-50% flex flex-col bg-white items-center gap-12 pt-1 pb-12 text-lg font-extra transform transition-transform ${isMenuOpen ? "opacity-100" : "opacity-0"}`} style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}
-            // className='absolute opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-out transform group-hover:translate-y-0 translate-y-2'
+                    `md:hidden absolute top-15 left-0 w-full z-100 flex flex-col bg-white items-center gap-10 pt-1 pb-8 text-lg font-extra transform transition-transform shadow-[0_10px_20px_-15px_rgba(0,0,0,0.3)] ${isMenuOpen ? "opacity-100" : "opacity-0"}`} style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}
             >
                 <li className='font-extra md:text-lg  hover:scale-110 transition-all hover:text-amber-600'><NavLink to="/">Characters</NavLink></li>
                 <li className='font-extra md:text-lg hover:scale-110 transition-all hover:text-amber-600'><NavLink to="/locations">Locations</NavLink></li>

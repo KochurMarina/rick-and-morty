@@ -6,7 +6,7 @@ import logo from '../assets/icons/logo.png'
 
 const Header = () => {
   return (
-    <header className='max-w-5xl mx-auto flex justify-between items-center font-primary text-sm px-6 md:px-4 py-1.5 md:py-0   shadow-[0_10px_20px_-15px_rgba(0,0,0,0.3)]'>
+    <header className='max-w-5xl mx-auto flex justify-between items-center font-primary text-sm px-6 md:px-4 py-1.5 md:py-0 shadow-[0_10px_20px_-15px_rgba(0,0,0,0.3)]'>
       <Link to="/">
         <img src={logo} alt="logo" className='w-[36px] hover:scale-110 transition-all' />
       </Link>

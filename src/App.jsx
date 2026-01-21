@@ -4,13 +4,7 @@ import Characters from "./pages/Characters"
 import Locations from "./pages/Locations"
 import Episodes from "./pages/Episodes"
 
-
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
-
-
-
-
-
 
 function App() {
 
@@ -32,6 +26,5 @@ function App() {
   )
 
 }
-
 
 export default App

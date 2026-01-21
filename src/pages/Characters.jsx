@@ -4,7 +4,6 @@ import FilterSection from '../components/FilterSection'
 import CharactersList from '../components/CharactersList'
 import Pagination from '../components/Pagination'
 
-
 const Characters = () => {
   /*-----API Data-----*/
   const [pageNumber, setPageNumber] = useState(1);
@@ -24,7 +23,7 @@ const Characters = () => {
   return (
     <div>
       <svg
-        className="m-auto my-6 px-5 stroke-black stroke-2 drop-shadow-[0_10px_10px] drop-shadow-green-500 "
+        className="m-auto my-6 px-5 stroke-black stroke-2 drop-shadow-[0_10px_10px] drop-shadow-green-500 -z-100"
         width="100%"
         height="212"
         viewBox="0 0 723 212"
@@ -106,7 +105,7 @@ const Characters = () => {
           </clipPath>
         </defs>
       </svg>
-      <FilterSection setPageNumber={setPageNumber} setSearch={setSearch}/>
+      <FilterSection setPageNumber={setPageNumber} setSearch={setSearch} placeholderText={'Filter by name...'}/>
       <CharactersList results={results} />
       <Pagination info={info} setPageNumber={setPageNumber} />
     </div>

@@ -12,7 +12,8 @@ const SearchBar = ({ setPageNumber, setSearch, placeholderText }) => {
           setSearch(e.target.value)
         }} type="text"
         placeholder={placeholderText}
-        className='p-4 pl-12 rounded-md shadow-md border border-lightest placeholder:text-grey-500 placeholder:text-base focus:outline-2 focus:outline-accent md:min-w-lg' />
+        className='p-4 pl-12 rounded-md shadow-md border border-lightest placeholder:text-grey-500 placeholder:text-base focus:outline-2 focus:outline-accent md:min-w-lg' 
+        />
     </div>
 
 
